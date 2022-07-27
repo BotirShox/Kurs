@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Kurs</string>
+    <string name="sales.icon">Sales</string>
+    <string name="home_text">Главная</string>
+    <string name="about_text">О нас</string>
+    <string name="contacts_text">Контакты</string>
+    <string name="main_text1">Курсы</string>
+    <string name="main_text2">Валют</string>
+    <string name="course_start_date">Курс на сегодня</string>
+    <string name="course_level">Время</string>
+    <string name="textview">TextView</string>
+
+</resources>

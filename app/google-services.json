@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "491439223565",
+    "project_id": "kurs-d3170",
+    "storage_bucket": "kurs-d3170.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491439223565:android:3296fb38dcfe074efdf644",
+        "android_client_info": {
+          "package_name": "com.byu.kurs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491439223565-5gidc6cdnfos7ku5mvsc08c7ia45piah.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKXXg59EStj4VuGSaZbFV_5cNrOMJFGAo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491439223565-5gidc6cdnfos7ku5mvsc08c7ia45piah.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coursePageBg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/asideBgColor"
+    tools:context=".CoursePage">
+
+
+    <ImageView
+        android:id="@+id/courseImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="center"
+        android:transitionName="courseImage"
+        app:layout_constraintBottom_toTopOf="@+id/coursePageName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/ic_eskhata" />
+
+    <TextView
+        android:id="@+id/coursePageName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:textColor="@color/purple_700"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/courseImage"
+        app:layout_constraintBottom_toTopOf="@id/coursePageTitle"
+        android:gravity="center"
+        tools:ignore="NotSibling" />
+
+    <LinearLayout
+        android:id="@+id/linearLay"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/coursePageName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/addToCart"
+        tools:ignore="MissingConstraints">
+
+    <TextView
+        android:id="@+id/coursePageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:fontFamily="serif-bold"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="@string/course_start_date"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/courseDate"
+        app:layout_constraintEnd_toEndOf="@id/linearLay"
+        app:layout_constraintStart_toStartOf="@id/linearLay"
+        app:layout_constraintTop_toTopOf="@+id/linearLay" />
+
+
+    <TextView
+        android:id="@+id/coursePageDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="serif-bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="Курс на сегодня"
+        android:textSize="25sp"
+        android:textColor="@color/colors"
+        app:layout_constraintBottom_toTopOf="@+id/courseLevel"
+        app:layout_constraintEnd_toEndOf="@id/linearLay"
+        app:layout_constraintStart_toStartOf="@id/linearLay"
+        app:layout_constraintTop_toBottomOf="@+id/courseTitle" />
+
+    <TextView
+        android:id="@+id/coursePageLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="serif-bold"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:layout_gravity="center"
+        android:text="Время"
+        android:textSize="25sp"
+        android:textColor="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="@id/linearLay"
+        app:layout_constraintTop_toBottomOf="@+id/courseDate"
+        app:layout_constraintStart_toStartOf="@id/linearLay"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLay" />
+
+    </LinearLayout>
+
+    <ImageButton
+
+        android:id="@+id/addToCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_button"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

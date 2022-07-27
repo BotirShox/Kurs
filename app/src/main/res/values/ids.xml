@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="courseBg" type="id" />
+    <item name="courseImage" type="id" />
+    <item name="courseTitle" type="id" />
+    <item name="courseDate" type="id" />
+    <item name="courseLevel" type="id" />
+</resources>
